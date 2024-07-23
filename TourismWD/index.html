@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldTourism.com</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: url('head.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            color: beige;
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .header button {
+            margin: 10px 5px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background: linear-gradient(45deg, #913b3b, #833434);
+            color: white;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header button:hover {
+            background: linear-gradient(45deg, #3e8e41, #4CAF50);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header button:active {
+            background: linear-gradient(45deg, #2e6e31, #3e8e41);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transform: translateY(2px);
+        }
+        .main-content {
+            padding: 20px;
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            background: url('bg.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+        }
+        .location-card {
+            min-width: 300px;
+            margin-right: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .location-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .location-card .description {
+            padding: 15px;
+            text-align: center;
+        }
+        .location-card .description h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #4CAF50;
+        }
+        .location-card .description p {
+            margin: 10px 0 0;
+            font-size: 1em;
+            color: #666;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="travel.png" alt="travel">
+        <h1 id="h1">WorldTourism: The Place Where Your Dream Vacations Are Planned</h1>
+        <button id="b1">Home</button>
+        <button id="b2">Travel with us</button>
+        <button id="b3">Packages</button>
+        <button id="b4">About us</button>
+    </div>
+    <div class="main-content">
+        <div class="location-card">
+            <img src="beach.jpg" alt="Location 1">
+            <div class="description">
+                <h2>Hawaii</h2>
+                <p>Taste the Tan of Hawaii</p>
+            </div>
+        </div>
+        <div class="location-card">
+            <img src="hawai.jpg" alt="Location 2">
+            <div class="description">
+                <h2>Thailand</h2>
+                <p>Expore the beauty of Thai beaches</p>
+            </div>
+        </div>
+        <div class="location-card">
+            <img src="india.jpg" alt="Location 3">
+            <div class="description">
+                <h2>India</h2>
+                <p>Explore the Taste of India</p>
+            </div>
+        </div>
+        <div class="location-card">
+            <img src="Alps.jpg" alt="Location 4">
+            <div class="description">
+                <h2>Alphs</h2>
+                <p>Climb the peak of Alphs</p>
+            </div>
+        </div>
+        <div class="location-card">
+            <img src="venice.jpg" alt="Location 5">
+            <div class="description">
+                <h2>Venice</h2>
+                <p>Relax in the eve of Europe</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h4 id = "h4">&copy;WorldTourism Co. & Foundation</h4>
+    </div>
+</body>
+</html>
